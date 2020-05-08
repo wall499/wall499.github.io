@@ -98,7 +98,7 @@
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">2</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">3</span></li></ul>
               </li>
             
           
@@ -162,6 +162,58 @@
           <h1><a href="/archives/2020" class="archive-year">2020</a></h1>
         </div>
         <div class="post-list">
+    
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2020/05/08/java200508/" >
+  java200508
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2020/05/08/java200508/"><span class="article-date">
+  2020-05-08
+</span>
+</a>
+        
+
+        
+
+      </div>
+      <div class="article-entry">
+        
+          <h1 id="编程学习备忘录"><a href="#编程学习备忘录" class="headerlink" title="编程学习备忘录"></a>编程学习备忘录</h1><p><strong>JSTL</strong></p>
+<p>foreach 的用法</p>
+<p>JSTL中,&lt;c:foreach items=” “ var=” “&gt;<br>这个知页面是以列表显示数据的，对于列表每一条数据的来源，items=“”，“”里面加的是数据来源，var代表的道是一条数据的变量，通过这个变量来取值，例如：&lt;c:forEach items=”${contentModel.items}” var=”item”&gt;，数据源是${contentModel.items}，每一条数据的变量就是item，之后的表格数据就可以从item里面取值了，但是前提是你容已经在${contentModel.items}放入值了。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;c:choose&gt;</span><br><span class="line">    &lt;c:when test=<span class="string">"$&#123;salary &lt;= 0&#125;"</span>&gt;</span><br><span class="line">       太惨了。</span><br><span class="line">    &lt;/c:when&gt;</span><br><span class="line">    &lt;c:when test=<span class="string">"$&#123;salary &gt; 1000&#125;"</span>&gt;</span><br><span class="line">       不错的薪水，还能生活。</span><br><span class="line">    &lt;/c:when&gt;</span><br><span class="line">    &lt;c:otherwise&gt;</span><br><span class="line">        什么都没有。</span><br><span class="line">    &lt;/c:otherwise&gt;</span><br><span class="line">&lt;/c:choose&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>JS</strong></p>
+<p>按键取反</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">inverseSelect</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">			<span class="keyword">var</span> checkboxes=<span class="built_in">document</span>.getElementsByName(<span class="string">"checkbox"</span>);</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;checkboxes.length;i++)&#123;</span><br><span class="line">				checkboxes[i].checked=!checkboxes[i].checked;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>JQUERY</strong></p>
+<p>jquery根据name属性查找<br>$(“div[id]”) 选择所有含有id属性的div元素<br>$(“input[name=’bt’]”) 选择所有的name属性等于’bt’的input元素</p>
+<hr>
+<p><strong>SQL语句</strong></p>
+<p>mysql 设置数字默认值为0<br>分两种情况，一种是此表中并没数据，一种是表中已存在数据。</p>
+<p>针对第一种：<br>alter table 表名 alter column 字段 set default 0;</p>
+<p>针对第二种情况：<br>update tablename set 字段=0；<br>alter table 表名 alter column 字段 set default 0;</p>
+<p>Mysql中如何实现某字段数据自动加1<br>update BBD set cs=cs+1 where ID like id;</p>
+
+        
+      </div>
+    </div>
+
+  
+
+  
+  
     
   
 
