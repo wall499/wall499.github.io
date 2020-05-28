@@ -98,7 +98,7 @@
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">1</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">6</span></li></ul>
               </li>
             
           
@@ -151,6 +151,237 @@
         <div style="max-width: 1000px">
       
           
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2020/05/28/TCP/" >
+  TCP
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2020/05/28/TCP/"><span class="article-date">
+  2020-05-28
+</span>
+</a>
+        
+
+        
+
+      </div>
+      <div class="article-entry">
+        
+          <h3 id="计算机网络的结构分层"><a href="#计算机网络的结构分层" class="headerlink" title="计算机网络的结构分层"></a>计算机网络的结构分层</h3><ol>
+<li><p>物理层</p>
+</li>
+<li><p>数据链路层</p>
+</li>
+<li><p>网络层</p>
+</li>
+<li><p>传输层</p>
+</li>
+<li><p>会话层</p>
+</li>
+<li><p>表示层</p>
+</li>
+<li><p>应用层</p>
+</li>
+</ol>
+<p><strong>三次握手</strong></p>
+<ul>
+<li>TCP提供面向有连接的通信传输。面向有连接是指在数据通信开始之前先做好两端之间的准备工作。</li>
+<li>所谓三次握手是指建立一个TCP连接时需要客户端和服务端总共发送三个包以确认连接的建立。在socket编程中，这一过程由客户端执行connect来触发。</li>
+</ul>
+<ol>
+<li>第一次握手：客户端将标志位SYN设置为1，随机产生一个值seq=J,并将数据包发送给服务器端，客户端进入SYN_SENT状态，等待服务器确认。</li>
+<li>第二次握手：服务器收到数据包后，由SYN=1知道客户端请求建立连接，服务器端将标志位SYN和ACK都设置为1，ack=J+1,随机产生一个值seq=K，并将该数据包发送给客户端以确认连接请求，服务器进入SYN_RCVD状态。</li>
+<li>第三次握手：客户端收到确认后，检查ack是否为J+1,ACK是否为1，如果正确则将标志位ACK设置为1，ack=K+1,并将该数据包发送给服务器端，服务器端检查ack是否为K+1，ACK是否为1，如果正确则连接建立成功，客户端和服务器端进入ESTABLISHED状态，完成三次握手，随后客户端与服务器端之间可以开始传输数据了。</li>
+</ol>
+<p><strong>四次挥手</strong></p>
+<p>1.第一次挥手:</p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2020/05/28/oracle%20%E8%AF%AD%E5%8F%A5/" >
+  oracle 语句
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2020/05/28/oracle%20%E8%AF%AD%E5%8F%A5/"><span class="article-date">
+  2020-05-28
+</span>
+</a>
+        
+
+        
+
+      </div>
+      <div class="article-entry">
+        
+          <h3 id="oracle-语句"><a href="#oracle-语句" class="headerlink" title="oracle 语句"></a>oracle 语句</h3><p><strong>游标</strong></p>
+<p>游标是SQL的一个内存工作区，由系统或用户以变量的形式定义.</p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2020/05/28/%E7%A9%BA%E6%8C%87%E9%92%88%E6%8A%A5%E9%94%99/" >
+  空指针报错
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2020/05/28/%E7%A9%BA%E6%8C%87%E9%92%88%E6%8A%A5%E9%94%99/"><span class="article-date">
+  2020-05-28
+</span>
+</a>
+        
+
+        
+
+      </div>
+      <div class="article-entry">
+        
+          <p><strong>JSP</strong></p>
+<input type="hidden" id="type">
+
+
+
+<script type="text/javascript">
+        function ini(){
+            var text=document.getElementById("productCode");
+            if(text.value==""){
+                document.getElementById("type").value="add";
+                text.readOnly=false;
+            }
+        }
+    </script>
+
+
+
+<p><strong>Exception</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java.lang.NullPointerException</span><br><span class="line">	com.wall675.servlet.ProductAdd.doGet(ProductAdd.java:34)</span><br></pre></td></tr></table></figure>
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2020/05/28/%E8%A3%85%E9%80%BC%E8%8B%B1%E8%AF%ADjava/" >
+  装逼英语java
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2020/05/28/%E8%A3%85%E9%80%BC%E8%8B%B1%E8%AF%ADjava/"><span class="article-date">
+  2020-05-28
+</span>
+</a>
+        
+
+        
+
+      </div>
+      <div class="article-entry">
+        
+          <p><strong>Q1,Why java is platform independent?</strong></p>
+<p>Java is called platform independent because of its byte codes which can run on any system irrespective of its underlying operating system.</p>
+<p><strong>Q2, Why java is not 100% Object-oriented?</strong></p>
+<p>Java is not 100% Object-oriented because it makes use of eight primitive data types which are not objects.</p>
+<p><strong>Q3,What is the difference between equals() and == in java</strong></p>
+<p>Equals() method is defined in Object class in java and used for checking equality of two objects defined by business logic.</p>
+<p>“==” or equality operator in java is a binary operator provided by Java Programming language and used to compare primitives and objects. public boolean equals(Object o) is the method provided by the Object class. The default implementation uses == operator to compare two objects. For example: method can be overridden like String class. equals() method is used to compare the values of two objects.</p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2020/05/28/%E9%9B%86%E5%90%88%E6%95%B4%E7%90%86/" >
+  集合整理
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2020/05/28/%E9%9B%86%E5%90%88%E6%95%B4%E7%90%86/"><span class="article-date">
+  2020-05-28
+</span>
+</a>
+        
+
+        
+
+      </div>
+      <div class="article-entry">
+        
+          <p>Collection:<br>    List:<br>        元素有索引位置,可以存放重复的值<br>        ArrayList:<br>            底层是数组,有扩容的方法<br>            特点是查询快<br>        LinkedList:<br>            底层是双向链表,多了头尾节点的操作<br>            增加删除相对快一些<br>        Vector:<br>            跟ArrayList相比,Vector是线程安全的<br>        Stack:<br>            栈,后进先出<br>    Set:<br>        无序排放,不能存放重复的值<br>        HashSet:<br>            底层是HashMap.<br>            可以存放null<br>        TreeSet;<br>            底层是TreeMap<br>            不能存放null<br>            元素存放的顺序是自然顺序,如果存放的是对象时,需要对象所属的那个类实现Comparable接口,或者自定义一个比较器<br>Map:<br>    元素都是键值对key-value,每一个键只能对应一个值<br>    HashMap:<br>        key,value都可以为null<br>    Hashtable:<br>        与HashMap相比是线程安全的<br>        key 和value都不能为null<br>    TreeMap:<br>        key不能存放null<br>        元素存放的顺序是key的自然顺序,如果key存放的是对象时,需要对象所属的那个类实现Comparable接口,或者自定义一个比较器</p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
 
   
   

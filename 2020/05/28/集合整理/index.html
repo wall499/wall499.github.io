@@ -8,19 +8,19 @@
 
 <title>
   
-    java200508
+    集合整理
   
 </title>
 
-<meta name="description" content="编程学习备忘录JSTL foreach 的用法 JSTL中,&lt;c:foreach items&#x3D;” “ var&#x3D;” “&gt;这个知页面是以列表显示数据的，对于列表每一条数据的来源，items&#x3D;“”，“”里面加的是数据来源，var代表的道是一条数据的变量，通过这个变量来取值，例如：&lt;c:forEach items&#x3D;”${contentModel.items}” var&#x3D;”item”&amp;gt">
+<meta name="description" content="Collection:    List:        元素有索引位置,可以存放重复的值        ArrayList:            底层是数组,有扩容的方法            特点是查询快        LinkedList:            底层是双向链表,多了头尾节点的操作            增加删除相对快一些        Vector:">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java200508">
-<meta property="og:url" content="https://wall499.github.io/2020/05/08/java200508/index.html">
+<meta property="og:title" content="集合整理">
+<meta property="og:url" content="https://wall499.github.io/2020/05/28/%E9%9B%86%E5%90%88%E6%95%B4%E7%90%86/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="编程学习备忘录JSTL foreach 的用法 JSTL中,&lt;c:foreach items&#x3D;” “ var&#x3D;” “&gt;这个知页面是以列表显示数据的，对于列表每一条数据的来源，items&#x3D;“”，“”里面加的是数据来源，var代表的道是一条数据的变量，通过这个变量来取值，例如：&lt;c:forEach items&#x3D;”${contentModel.items}” var&#x3D;”item”&amp;gt">
+<meta property="og:description" content="Collection:    List:        元素有索引位置,可以存放重复的值        ArrayList:            底层是数组,有扩容的方法            特点是查询快        LinkedList:            底层是双向链表,多了头尾节点的操作            增加删除相对快一些        Vector:">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-05-07T23:02:25.835Z">
-<meta property="article:modified_time" content="2020-05-08T08:09:46.106Z">
+<meta property="article:published_time" content="2020-05-28T15:03:56.790Z">
+<meta property="article:modified_time" content="2020-05-14T03:52:29.377Z">
 <meta property="article:author" content="wall499">
 <meta name="twitter:card" content="summary">
 
@@ -154,17 +154,17 @@
       
         <div style="max-width: 1000px">
       
-          <article id="post-java200508" class="article article-type-post">
+          <article id="post-集合整理" class="article article-type-post">
   
     <h1 class="article-header">
-      java200508
+      集合整理
     </h1>
   
   
 
   <div class="article-info">
     <span class="article-date">
-  2020-05-08
+  2020-05-28
 </span>
 
     
@@ -173,25 +173,7 @@
 
   </div>
   <div class="article-entry">
-    <h1 id="编程学习备忘录"><a href="#编程学习备忘录" class="headerlink" title="编程学习备忘录"></a>编程学习备忘录</h1><p><strong>JSTL</strong></p>
-<p>foreach 的用法</p>
-<p>JSTL中,&lt;c:foreach items=” “ var=” “&gt;<br>这个知页面是以列表显示数据的，对于列表每一条数据的来源，items=“”，“”里面加的是数据来源，var代表的道是一条数据的变量，通过这个变量来取值，例如：&lt;c:forEach items=”${contentModel.items}” var=”item”&gt;，数据源是${contentModel.items}，每一条数据的变量就是item，之后的表格数据就可以从item里面取值了，但是前提是你容已经在${contentModel.items}放入值了。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;c:choose&gt;</span><br><span class="line">    &lt;c:when test=<span class="string">"$&#123;salary &lt;= 0&#125;"</span>&gt;</span><br><span class="line">       太惨了。</span><br><span class="line">    &lt;/c:when&gt;</span><br><span class="line">    &lt;c:when test=<span class="string">"$&#123;salary &gt; 1000&#125;"</span>&gt;</span><br><span class="line">       不错的薪水，还能生活。</span><br><span class="line">    &lt;/c:when&gt;</span><br><span class="line">    &lt;c:otherwise&gt;</span><br><span class="line">        什么都没有。</span><br><span class="line">    &lt;/c:otherwise&gt;</span><br><span class="line">&lt;/c:choose&gt;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong>JS</strong></p>
-<p>按键取反</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">inverseSelect</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">			<span class="keyword">var</span> checkboxes=<span class="built_in">document</span>.getElementsByName(<span class="string">"checkbox"</span>);</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;checkboxes.length;i++)&#123;</span><br><span class="line">				checkboxes[i].checked=!checkboxes[i].checked;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong>JQUERY</strong></p>
-<p>jquery根据name属性查找<br>$(“div[id]”) 选择所有含有id属性的div元素<br>$(“input[name=’bt’]”) 选择所有的name属性等于’bt’的input元素</p>
-<hr>
-<p><strong>SQL语句</strong></p>
-<p>mysql 设置数字默认值为0<br>分两种情况，一种是此表中并没数据，一种是表中已存在数据。</p>
-<p>针对第一种：<br>alter table 表名 alter column 字段 set default 0;</p>
-<p>针对第二种情况：<br>update tablename set 字段=0；<br>alter table 表名 alter column 字段 set default 0;</p>
-<p>Mysql中如何实现某字段数据自动加1<br>update BBD set cs=cs+1 where ID like id;</p>
+    <p>Collection:<br>    List:<br>        元素有索引位置,可以存放重复的值<br>        ArrayList:<br>            底层是数组,有扩容的方法<br>            特点是查询快<br>        LinkedList:<br>            底层是双向链表,多了头尾节点的操作<br>            增加删除相对快一些<br>        Vector:<br>            跟ArrayList相比,Vector是线程安全的<br>        Stack:<br>            栈,后进先出<br>    Set:<br>        无序排放,不能存放重复的值<br>        HashSet:<br>            底层是HashMap.<br>            可以存放null<br>        TreeSet;<br>            底层是TreeMap<br>            不能存放null<br>            元素存放的顺序是自然顺序,如果存放的是对象时,需要对象所属的那个类实现Comparable接口,或者自定义一个比较器<br>Map:<br>    元素都是键值对key-value,每一个键只能对应一个值<br>    HashMap:<br>        key,value都可以为null<br>    Hashtable:<br>        与HashMap相比是线程安全的<br>        key 和value都不能为null<br>    TreeMap:<br>        key不能存放null<br>        元素存放的顺序是key的自然顺序,如果key存放的是对象时,需要对象所属的那个类实现Comparable接口,或者自定义一个比较器</p>
 
   </div>
   <footer class="article-footer">
